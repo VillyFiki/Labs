@@ -1,16 +1,15 @@
 package Labs;
-
-import java.util.Date;
+import java.util.Date; //Импорт класса Date
 public interface Lab {
-    public String Intro = "Программу выполнил:";
-    public String Name = "Заводов Максим Александрович";
-    public String Code = "Шифр группы: ИВТ/б-21-2-о";
-    public String Variant = "Вариант: 7";
-    public String Date = "Дата: " + new Date();
-    public String Outro = "Проверила: \nВладимирова Елена Сергеевна";
+    String Intro = "Программу выполнил:"; //Определение основных полей класса.
+    String Name = "Заводов Максим Александрович"; //Выписано сюда для удобства изменения
+    String Code = "Шифр группы: ИВТ/б-21-2-о";
+    String Variant = "Вариант: 7";
+    String Date = "Дата: " + new Date(); //Создание объекта Date, который возвращает текущую дату и перевод в строку
+    String Outro = "Проверила: \nВладимирова Елена Сергеевна";
 
-    public String getIntro();
-    public void runLab();
-    public String getOutro();
+    String getIntro(); //Определение обязательных методов для лаб
+    void runLab(); //В данном случае в них не так много смысла
+    String getOutro(); //Просто для красоты
 }
 
